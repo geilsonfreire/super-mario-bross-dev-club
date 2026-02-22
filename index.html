@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>Mario Bross</title>
+    </head>
+
+    <header>
+        <img src="./img/icon.png" alt="Logo do Super Mario Bross">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#nossos-servicos">Nossos Serviços</a>
+            </li>
+            <li>
+                <a href="#" onclick="openForm()">Contato</a>
+            </li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+    <body>
+
+        <div class="rímel"></div>
+        <video 
+            src="./video/video.mp4" 
+            autoplay 
+            muted 
+            loop
+            >
+        </video>
+
+        <main>
+
+            <section class="containers-left">
+                <img src="./img/logo.png" alt="Logo do Super Mario Bross" class="logo-mario">
+                <div class="glass">
+                    <p>
+                        Encanadores - <strong>Mario e Luide</strong>, Resolvemos todos os seus problemas <strong>hidráulicos!</strong> 
+                    </p>
+                    <p>
+                        Trabalhamos com encanamento residencial, comercial e industrial. Entre em contato conosco para solicitar um orçamento ou agendar um serviço. 
+                    </p>
+                </div>
+                <button 
+                    onclick="openForm()"
+                    >
+                    Agendar Serviço
+                </button>
+            </section>
+
+            <section class="containers-right">
+                <img src="./img/mario.png" alt="Imagem do Mario Bross" class="mario-bross">
+            </section>
+
+            <a 
+                href="https://wa.me/5598985868587?text=Seja%20Bem-Vindo" 
+                target="_blank">
+                    <img 
+                        src="./img/whatsapp.png" alt="icone do whatsapp" 
+                        class="whatsapp-icon">
+            </a>
+        
+        </main>
+        <div 
+            class="mask-forms" 
+            onclick="closeForm()">
+        </div>
+        <form 
+            class="forms-container"
+            action="https://formcarry.com/s/6IjDqrZhgfK"
+            method="POST"
+            enctype="multipart/form-data"
+            >
+                <input 
+                    type="text" 
+                    name="nome"
+                    placeholder="Digite seu nome">
+                <input 
+                    type="email" 
+                    name="email"
+                    placeholder="Digite seu email">
+                <textarea 
+                    name="message"
+                    placeholder="Digite sua mensagem"
+                    >
+                </textarea>
+
+                <button 
+                    type="submit">
+                    Enviar
+                </button>
+        </form>
+       
+        <!-- Seção de Serviços - Bombeiro Hidráulico -->
+        <section id="nossos-servicos">
+            <div class="serviços-container">
+                <h2>Nossos Serviços</h2>
+        
+                <div class="servicos-grid">
+                    <div class="servico-card">
+                        <img src="./img/1.jpg" alt="Conserto de Canos">
+                        <h3>Desentupimento</h3>
+                        <p>Reparação rápida e eficiente de canos danificados e vazamentos.</p>
+                    </div>
+        
+                    <div class="servico-card">
+                        <img src="./img/2.jfif" alt="Desentupimento">
+                        <h3>Conserto de Canos</h3>
+                        <p>Desentupimento de pias, chuveiros e fossas com equipamento profissional.</p>
+                    </div>
+        
+                    <div class="servico-card">
+                        <img src="./img/3.jfif" alt="Instalação">
+                        <h3>Instalação Hidráulica</h3>
+                        <p>Instalação completa de sistemas hidráulicos residenciais e comerciais.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <img src="./img/4.jpg" alt="Instalação">
+                        <h3>Instalação Hidráulica</h3>
+                        <p>Instalação completa de sistemas hidráulicos residenciais e comerciais.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <img src="./img/3.jfif" alt="Instalação">
+                        <h3>Instalação Hidráulica</h3>
+                        <p>Instalação completa de sistemas hidráulicos residenciais e comerciais.</p>
+                    </div>
+                    
+                    <div class="servico-card">
+                        <img src="./img/4.jpg" alt="Instalação">
+                        <h3>Instalação Hidráulica</h3>
+                        <p>Instalação completa de sistemas hidráulicos residenciais e comerciais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+    <footer>
+            <p>
+               <span>&copy;</span> 2026 Super Mario Bross. Todos os direitos reservados. | Desenvolvido por <strong>Geilson Freire</strong>.
+            </p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</html>
